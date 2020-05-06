@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight=".9"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:text="Activity Duaration"/>
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="35dp"
+                android:background="@drawable/ic_close_white"
+                android:layout_height="35dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/card_bg">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_height="wrap_content">
+                <TextView android:text="Today" style="@style/optionText"/>
+                <TextView android:text="Yesterday" style="@style/optionText"/>
+                <TextView android:text="This week" android:textColor="#573367" style="@style/optionText"/>
+                <TextView android:text="This Fortnight" style="@style/optionText"/>
+                <TextView android:text="This Month" style="@style/optionText"/>
+                <TextView android:text="Select Date" style="@style/optionText"/>
+
+                <!--<TextView android:text="Today" style="@style/optionText"/>
+                <TextView android:text="Yesterday" style="@style/optionText"/>
+                <TextView android:text="This week" android:textColor="#573367" style="@style/optionText"/>
+                <TextView android:text="This Fortnight" style="@style/optionText"/>
+                <TextView android:text="This Month" style="@style/optionText"/>
+                <TextView android:text="Select Date" style="@style/optionText"/>
+-->
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
